@@ -1,5 +1,4 @@
 // Implemet stack with the hhelp of listlist Data Structure
-
 import java.util.Scanner;
 
 class Main {
@@ -9,9 +8,11 @@ class Main {
     linkList l = new linkList();
 
     for (int i = 0; i < 5; i++) {
-      System.err.println("Enter a number: ");
+      System.err.print("Enter a number: ");
       l.insertFirst(scanner.nextInt());
     }
+
+    System.out.println(l.find(4));
 
     scanner.close();
 
